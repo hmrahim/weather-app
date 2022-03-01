@@ -20,6 +20,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${field("city").v
     console.log(data);
         innerText("cityname", data.name)
         innerText("temp",data.main.temp)
+        innerText("lead",data.weather[0].main)
     }
     
 }
